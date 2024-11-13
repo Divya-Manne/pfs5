@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/shopping-bag-cart_23-2148879372.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 8%;
+            margin-left: 16%;
+        }
+
+        .in {
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <div class="container">
+            <div class="in">
+                <h1>Login Here</h1>
+                <input type="text" name="email" placeholder="Enter your Email"
+                    style="text-align: center; border-radius: 5px;"><br>
+                <input type="password" name="password" placeholder="Enter your Password"
+                    style="text-align: center; border-radius: 5px;"><br>
+                <p>Don't have an account? <a href="adminsignup.html">signup</a></p>
+                <p>Forgot password? <a href="#">click here</a></p>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

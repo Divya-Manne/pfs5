@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            background-image: url("https://thumbs.dreamstime.com/b/black-friday-scene-crowded-malls-long-queues-online-shopping-deals-wooden-background-black-friday-scene-crowded-318363939.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .add {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            margin-top: 12%;
+        }
+        .add h1 {
+            margin-top: 0;
+            color: #333;
+            font-size: 24px;
+        }
+        .add .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 50%;
+        }
+
+        .add .button:hover {
+            background-color: #0056b3;
+        }
+        .add a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="add">
+        <h2>Welcome</h2>
+        <a href="{{url_for('usersignup')}}"><button class="button">Sign Up</button></a>
+        <a href="{{url_for('user_login')}}"><button class="button">Login</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image:url("https://img.freepik.com/free-vector/blue-data-technology-background-vector-with-binary-code_53876-110871.jpg?semt=ais_hybrid");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+
+        .otp {
+            text-align: center;
+            margin-top: 15%;
+        }
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 15%;
+            margin-right: 39%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <form method="post">
+        <div class="otp">
+            <h1>Otp Verification</h1>
+            <input type="text" name="otp" placeholder="Enter Email" style="text-align: center;"><br>
+            <br>
+            <a href="{{url_for('adminlogin')}}"><button>Submit</button></a>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
